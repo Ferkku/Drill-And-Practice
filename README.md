@@ -2,6 +2,7 @@
 
 ## About
 Created as a part of the FiTech Web Software Development course (completed summer 2023)
+
 https://fitech101.aalto.fi/web-software-development/
 
 This app allows users to add topics with questions and answers. These questions can then be used for repeated practice of learned content in the quiz section. The app requires registration for most features. Only admins can add topics. You can test admin privileges by logging in with email: "admin@admin.com" and password: "123456"
