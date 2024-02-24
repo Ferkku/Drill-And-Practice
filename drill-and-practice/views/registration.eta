@@ -1,0 +1,21 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>Registration</h1>
+
+<% if (it.errors) { %>
+    <ul>
+        <% Object.keys(it.errors).forEach((attribute) => { %>
+            <% Object.values(it.errors[attribute]).forEach((error) => { %>
+                <li><%= error %></li>
+            <% }); %>
+        <% }); %>
+    </ul>
+<% } %>
+
+<form method="POST" action="/auth/register">
+    Email:<br/>
+    <input type="email" name="email" /><br/>
+    Password:<br/>
+    <input type="password" name="password" /><br/>
+    <input type="submit" value="Register" />
+</form>

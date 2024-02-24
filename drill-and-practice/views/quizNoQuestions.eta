@@ -1,0 +1,5 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1><%= it.topic.name %></h1>
+
+<p>There are currently no questions for this topic</p>

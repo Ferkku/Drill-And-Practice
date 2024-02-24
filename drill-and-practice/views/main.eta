@@ -1,0 +1,16 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1>Answer questions and learn!</h1>
+
+<p>This app allows you to create topics and add questions which can help you learn. You must login to access most features.</p>
+
+<h2>Statistics</h2>
+<ul>
+    <li>Current number of topics: <%= it.topics %></li>
+    <li>Current number of questions: <%= it.questions %></li>
+    <li>Answers given to questions: <%= it.answers %></li>
+</ul>
+
+<h2>Start Learning!</h2>
+<a href="/auth/login">Login</a>
+<a href="/auth/register">Register</a>
